@@ -26,6 +26,10 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
+      - name: Listing
+        run: ls -la
+        shell: bash
+      # Runs a single command using the runners shell
       - name: Printing my name
         run: python printMyName.py
         shell: bash
